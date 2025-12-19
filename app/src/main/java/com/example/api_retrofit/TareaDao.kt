@@ -10,8 +10,8 @@ import retrofit2.http.Path
 
 
 interface TareaDao {
-    @GET("/todos")
     // Cuando hay servidor de por medio, SIEMPRE debe ser suspend (asíncrono)
+    @GET("/todos")
     suspend fun getAllTasks(): Response<List<Tarea>> // Response en vez de Flow
 
     @GET("/todos/{id}")

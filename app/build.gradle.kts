@@ -40,11 +40,13 @@ android {
 }
 
 dependencies {
+    //  --- Plugin para apis ---
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
     implementation(libs.androidx.compose.runtime.livedata)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
+    //  --- Plugin para apis ---
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
